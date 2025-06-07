@@ -1,0 +1,17 @@
+[
+    {
+        "nome": "tarefa 01",
+        "categoria": "hobby",
+        "concluida": false
+    },
+    {
+        "nome": "comprar chocolate",
+        "categoria": "comida",
+        "concluida": true
+    },
+    {
+        "nome": "trabalhar",
+        "categoria": "work",
+        "concluida": false
+    }
+]
