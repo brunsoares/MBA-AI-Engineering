@@ -1,7 +1,5 @@
 import numpy as np
 import collections
-import math
-import matplotlib.pyplot as plt
 np.set_printoptions(precision=3,suppress=True)
 
 # Função para tokenização simplificada do BPE
