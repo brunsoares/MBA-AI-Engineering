@@ -159,3 +159,37 @@ print('='*100)
 (thresh, imgBWEx002) = cv.threshold(imgGRAYEx002, thresh, 255, cv.THRESH_OTSU)
 print(f'O valor de thresh: {thresh}')
 cv2_imshow(imgBWEx002)
+
+# Pré-processamento
+# Ajuste de brilho - Clarear
+print('='*100)
+print('Ajuste de brilho')
+print('='*100)
+print('imagem original')
+cv2_imshow(imgGRAY)
+print('imagem com mais brilho')
+shine_gray = cv.add(imgGRAY, np.ones(imgGRAY.shape, dtype=np.uint8)*70)
+cv2_imshow(shine_gray)
+
+# Ajuste de brilho - Escurecer
+print('='*100)
+print('Ajuste de brilho')
+print('='*100)
+print('imagem original')
+cv2_imshow(imgGRAY)
+print('imagem com menos brilho')
+dark_gray = cv.subtract(imgGRAY, np.ones(imgGRAY.shape, dtype=np.uint8)*70)
+cv2_imshow(dark_gray)
+
+# Negativo
+print('='*100)
+print('Negativo da imagem')
+print('='*100)
+print('imagem original')
+cv2_imshow(imgGRAY)
+print('imagem com negativo')
+neg_gray = 255 - imgGRAY
+cv2_imshow(neg_gray)
+print('imagem com negativo de binário')
+neg_bw = 255 - imgBW
+cv2_imshow(neg_bw)
